@@ -1,31 +1,31 @@
 using System;
 
-public class PersonalInfo
-{
-    public string Name { get; set; }
-    public string Birthdate { get; set; }
-    public string WorkPhone { get; set; }
-    public string CellPhone { get; set; }
-
-    public PersonalInfo(string name, string birthdate, string workPhone, string cellPhone)
-    {
-        Name = name;
-        Birthdate = birthdate;
-        WorkPhone = workPhone;
-        CellPhone = cellPhone;
-    }
-
-    public void DisplayInfo()
-    {
-        Console.WriteLine(Name);
-        Console.WriteLine(Birthdate);
-        Console.WriteLine("work " + WorkPhone);
-        Console.WriteLine("cell " + CellPhone);
-    }
-}
-
 public class Program
 {
+    public class PersonalInfo
+    {
+        public string Name { get; set; }
+        public string Birthdate { get; set; }
+        public string WorkPhone { get; set; }
+        public string CellPhone { get; set; }
+
+        public PersonalInfo(string name, string birthdate, string workPhone, string cellPhone)
+        {
+            Name = name;
+            Birthdate = birthdate;
+            WorkPhone = workPhone;
+            CellPhone = cellPhone;
+        }
+
+        public void DisplayInfo()
+        {
+            Console.WriteLine(Name);
+            Console.WriteLine(Birthdate);
+            Console.WriteLine("work " + WorkPhone);
+            Console.WriteLine("cell " + CellPhone);
+        }
+    }
+
     public static void Main()
     {
         // Unit Test #1
@@ -48,3 +48,4 @@ public class Program
         person4.DisplayInfo();
     }
 }
+// 2024/05/22_SenShoikot_Exercise 1.1
